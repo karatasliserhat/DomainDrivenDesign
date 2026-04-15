@@ -1,9 +1,13 @@
 ﻿namespace DomainDrivenDesign.Domain.Entities
 {
-    public abstract class Entity(Guid id) : IEquatable<Entity>
+    public abstract class Entity : IEquatable<Entity>
     {
-        public Guid Id { get => id; }
+        public Guid Id { get; init; }
 
+        protected Entity(Guid id)
+        {
+            Id = id;
+        }
 
 
         public override bool Equals(object? obj)

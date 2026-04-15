@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DomainDrivenDesign.Domain.Entities;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace DomainDrivenDesign.Application
@@ -7,7 +8,7 @@ namespace DomainDrivenDesign.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly(), typeof(Entity).Assembly));
             return services;
         }
     }

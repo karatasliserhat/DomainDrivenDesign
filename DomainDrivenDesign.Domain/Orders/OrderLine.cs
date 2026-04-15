@@ -4,8 +4,13 @@ using DomainDrivenDesign.Domain.Shared;
 
 namespace DomainDrivenDesign.Domain.Orders
 {
+
     public sealed class OrderLine : Entity
     {
+        private OrderLine(Guid id) : base(id)
+        {
+
+        }
         public OrderLine(Guid id, Guid orderId, Guid productId, int quantity, Money price) : base(id)
         {
             ProductId = productId;

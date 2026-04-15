@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesign.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesign.Infrastructure", "DomainDrivenDesign.Infrastructure\DomainDrivenDesign.Infrastructure.csproj", "{F604D893-04F4-4D12-85A9-FBE5EDC4A2FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainDrivenDesign.WebAPI", "DomainDrivenDesign.WebAPI\DomainDrivenDesign.WebAPI.csproj", "{AD92D653-2302-4B14-8978-CED59275A429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F604D893-04F4-4D12-85A9-FBE5EDC4A2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F604D893-04F4-4D12-85A9-FBE5EDC4A2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F604D893-04F4-4D12-85A9-FBE5EDC4A2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD92D653-2302-4B14-8978-CED59275A429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD92D653-2302-4B14-8978-CED59275A429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD92D653-2302-4B14-8978-CED59275A429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD92D653-2302-4B14-8978-CED59275A429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

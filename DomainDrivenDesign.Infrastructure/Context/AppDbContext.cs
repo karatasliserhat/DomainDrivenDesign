@@ -5,10 +5,9 @@ using DomainDrivenDesign.Domain.Products;
 using DomainDrivenDesign.Domain.Shared;
 using DomainDrivenDesign.Domain.Users;
 using Microsoft.EntityFrameworkCore;
-
 namespace DomainDrivenDesign.Infrastructure.Context
 {
-    internal class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options), IUnitOfWork
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options), IUnitOfWork
     {
 
         public DbSet<Order> Orders { get; set; }

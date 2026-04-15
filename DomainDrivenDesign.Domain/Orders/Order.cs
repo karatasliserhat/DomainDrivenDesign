@@ -4,6 +4,11 @@ namespace DomainDrivenDesign.Domain.Orders
 {
     public sealed partial class Order : Entity
     {
+
+        private Order(Guid id):base(id)
+        {
+            
+        }
         public Order(Guid id, string orderNumber, DateTime createdDate, OrderStatusEnum orderStatus) : base(id)
         {
             OrderNumber = orderNumber;
