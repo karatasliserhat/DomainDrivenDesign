@@ -2,5 +2,5 @@
 
 namespace DomainDrivenDesign.Domain.Orders.Events
 {
-    public  sealed record OrderDomainEvent(Guid OrderId):INotification;
+    public  sealed record OrderDomainEvent(Order Order):INotification;
 }

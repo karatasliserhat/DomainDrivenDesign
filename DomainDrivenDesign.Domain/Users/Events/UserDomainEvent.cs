@@ -2,5 +2,5 @@
 
 namespace DomainDrivenDesign.Domain.Users.Events
 {
-    public sealed record UserDomainEvent(Guid UserId) : INotification;
+    public sealed record UserDomainEvent(User User) : INotification;
 }
