@@ -15,7 +15,7 @@ namespace DomainDrivenDesign.Application.Features.Product.Create
                 request.CreateProductDto.currency, 
                 request.CreateProductDto.categoryId, 
                 cancellationToken);
-            await unitOfWork.SaveChangeAsync(cancellationToken);
+            await unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }
 }

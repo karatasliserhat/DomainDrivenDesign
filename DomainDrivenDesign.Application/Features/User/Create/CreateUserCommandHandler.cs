@@ -19,7 +19,7 @@ namespace DomainDrivenDesign.Application.Features.User.Create
                 request.CreateUserDto.FullAddress,
                 request.CreateUserDto.PostalCode,
                 cancellationToken);
-            await unitOfWork.SaveChangeAsync();
+            await unitOfWork.SaveChangesAsync();
 
             await mediator.Publish(new UserDomainEvent(user), cancellationToken);
         }

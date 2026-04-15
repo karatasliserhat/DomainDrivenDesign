@@ -9,7 +9,7 @@ namespace DomainDrivenDesign.Application.Features.Category.Create
         public async Task Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
             await categoryRepository.CreateAsync(request.CreateCategoryDto.name, cancellationToken);
-            await unitOfWork.SaveChangeAsync(cancellationToken);
+            await unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }
 }

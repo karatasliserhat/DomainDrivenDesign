@@ -11,7 +11,7 @@ namespace DomainDrivenDesign.Application.Features.Order.Create
         {
             var order = await orderRepository.CreateAsync(request.CreateOrderDtos,cancellationToken);
 
-            await unitOfWork.SaveChangeAsync(cancellationToken);
+            await unitOfWork.SaveChangesAsync(cancellationToken);
     
              await mediator.Publish(new OrderDomainEvent(order), cancellationToken);
         }
